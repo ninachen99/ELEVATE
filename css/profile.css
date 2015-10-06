@@ -1,0 +1,400 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700);
+
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+body {
+   font-family: 'Lato', sans-serif;
+   margin: 0 auto;
+   font-size: 12px;
+   width: 100%;
+}
+
+
+  
+/* header ---- */
+
+header {
+  margin-top: 20px;
+  padding-left: 5%;
+  width: 100%;
+  height: 76px;
+}
+
+.heading {
+  color: #fff;
+}
+
+
+div.logo img{
+    width: 113px;
+    height: 54px;
+    clear: both;
+}
+
+.nav-bar  {
+  margin-top: -2.5%;
+  margin-left: 60%;
+  
+}
+.nav-bar ul li {
+  list-style: none;
+  float: left; 
+  margin-left: 6%;  
+}
+
+.nav-bar li a {
+  font-weight:600;
+  text-transform: uppercase;;
+  text-decoration: none;
+  color:#4556a5;
+  padding-bottom: 9px;
+}
+
+.nav-bar li a:hover {
+    border-bottom: 5px solid #af1f59;
+}
+
+/* hero with grid styles ---*/ 
+
+
+main {
+    background-image: url("../Photos/MountainHero.jpg");
+    background-size: cover;
+    height: 706px;
+    margin-top:-15px;
+    background-color: #4556a5;
+    background-blend-mode: soft-light;
+}
+
+/* floating content-the nav bar for profile*/
+ section.container {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding-top: 100px;
+    width:90%;
+ }
+
+.student{
+  margin-left: -80px;
+}
+
+.student p {
+  margin-left:14px;
+}
+
+.nav-profile {
+    order:3;
+}
+
+.flex-item .row2 {
+   order:2;
+}
+.row2 h3  {
+   text-align: center;
+   margin-top:60%;
+   font-size: 1.5em;
+   font-weight: 400;
+   border-bottom: 1px solid #fff;
+   letter-spacing: 0.8px;
+   padding-bottom: 1px;
+   text-transform: uppercase;
+}
+
+
+.row2 p {
+   text-align: center;
+   margin-bottom: 40px;
+}
+
+.flex-item .row3 {
+    order:3;
+    margin-bottom: 50px;
+    margin-right:90px;
+}
+
+.lessons {
+  width:70%;
+  text-align: center;
+}
+
+.lessons p {
+  margin-bottom: 60px;
+}
+
+
+h3.title {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2px;
+  letter-spacing: 0.8px;
+}
+
+.nav-profile a {
+  text-decoration: none;
+  font-size: 2.6em;
+  color:#fff;
+  display:inline-block;
+  border:solid 0.99px #fff;
+  text-align: center;
+  width:84px;
+  height:50px;
+  margin-right:20px;
+  padding-top:3px;
+}
+
+.flex-item {
+  color:#fff; 
+  margin-top: 60px;
+}
+
+.student {
+  text-align: center;
+}
+
+
+/* font and size basic styling*/
+.student h3 {
+  font-size: 2em;
+  font-weight: 200;
+  color:#fff;
+  line-height: 10px;
+}
+.student p {
+  font-size:2em;
+  font-weight: 400;
+  color: #fff;
+}
+
+.student-img {
+	background-image: url("../Photos/head-08.png");
+	background-size: cover;
+	width:156px;
+	height:156px;
+  margin-left:60px;
+}
+
+
+.course-activity li  {
+	list-style: none;
+	font-size: 2em;
+	text-align: center;
+	border:0.99px solid #fff;
+	width:244px;
+	height:64px;
+	padding-top:16px;
+	margin-bottom: 20px;
+	cursor:pointer;
+}
+
+.course-activity a {
+	text-decoration: none;
+	color:#fff;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.course-activity  li:hover {
+	background-color: #ee447c;
+  border:0px;
+}
+
+
+/* float item styleing font and size*/
+
+.flex-item .title {
+	font-size:1.5em;
+	font-weight: 400;
+  text-transform: uppercase;
+}
+
+.flex-item p {
+   font-size: 1.5em;
+   font-weight: 300;
+}
+
+
+a.view-more {
+	text-decoration: none;
+	font-size: 1.2em;
+  text-align: center;
+	background-color:#ee447c;
+  padding:12.5px 40px;
+  letter-spacing: 0.6;
+  color:#fff;
+  cursor: pointer; 
+  
+}  
+
+
+/* icon image under path and lesson*/
+.image1 {
+  content:url("../Photos/icons/half.png");
+  width:160px;
+  height:160px;
+}
+
+.image2 {
+  content:url("../Photos/icons/fini.png");
+  width:160px;
+  height:160px;
+  margin-left:30px;
+  margin-bottom: 10px;
+}
+
+
+/* playground - click event */
+
+.show {
+   display:flex;
+   flex-direction:column;
+   position: absolute;
+   top:300px;
+   left:550px;
+   width:80%;
+   justify-content:center;
+   display: none;
+}
+
+.play-icon img {
+   width:200px;
+   height: 181px;
+   display:inline-block;
+   margin-left: 20px;
+}
+
+p.notice {
+  order:1;
+  font-size: 1.75em;
+  color:#fff;
+  font-weight: 300;
+  margin-left:110px;
+  border-bottom: 1px solid #fff;
+  width:41%;
+  padding-bottom: 2px;
+}
+
+
+.play-icon {
+  order:2;
+}
+
+.actions {
+  order:3;
+  
+}
+.actions ul li {
+  display:inline-block;
+  font-size: 2em;
+  color:#fff;
+  font-weight: 600;
+  list-style: none;
+  margin-right:45px;
+}
+
+li.last {
+  margin-right: 0;
+  margin-left: 25px;
+}
+
+li.first{
+  margin-left: -40px;
+}
+
+li.middle {
+  margin-left: 4px;
+}
+
+
+/* footer ----*/
+
+footer {
+  background-color:#231f20;
+  margin-top: -20px;
+  position: relative;
+  height: 356px;
+  z-index: -9;
+  clear: both;
+
+}
+
+.contact-us ul li {
+  float: left;
+  list-style: none;
+  margin-top:40px;
+  margin-left:5%;
+}
+
+.list-header {
+  margin-right: 10%;
+  margin-bottom: 5%;
+}
+
+.contact-us h6{
+    color: #ef447c;
+    font-size:1.28em;
+    font-weight: 600;
+    list-style: none;
+}
+
+.contact-us p {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.connect  i {
+  float: left;
+  background-color:#fff;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  -moz-border-radius: 12.5px;
+  -webkit-border-radius: 12.5px;
+  border-radius: 12.5px;
+  margin-right:10px;
+  padding-top:5px;
+}
+
+ul.connect {
+   margin-left:-45px;
+   margin-top:-40px;
+   width:200px;
+}
+
+
+/* footer's very bottom, copyright and logo*/
+
+.bottom {
+  clear: both;
+  
+}
+.bottom p {
+  margin-top:3%;
+  position: relative; 
+  margin-left:7%;
+}
+
+.copy-right {
+  color: #fff;
+}
+
+
+
+
+
+
