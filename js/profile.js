@@ -1,11 +1,11 @@
 $(document).ready(function(){
      $("#clickPlay").click(function(){
-     	$(".helper").fadeIn( 'swing');
-     	$(".play-ground").fadeOut('swing');
+     	$(".helper").show( );
+     	$(".play-ground").hide();
      });
      $("#clickEnroll").click(function(){
-     	$(".helper").fadeIn('swing');
-     	$(".enrolled").fadeOut('swing');
+     	$(".helper").show();
+     	$(".enrolled").hide();
      });
 })
 

@@ -22,6 +22,7 @@ body {
    margin: 0 auto;
    font-size: 12px;
    width: 100%;
+   overflow: 
 }
 
 
@@ -30,7 +31,7 @@ body {
 
 header {
   margin-top: 20px;
-  padding-left: 5%;
+  padding-left: 8%;
   width: 100%;
   height: 76px;
 }
@@ -76,7 +77,7 @@ main {
     background-image: url("../Photos/MountainHero.jpg");
     background-size: cover;
     height: 706px;
-    margin-top:-15px;
+    margin-top:-13px;
     background-color: #4556a5;
     background-blend-mode: soft-light;
 }
@@ -91,11 +92,13 @@ main {
  }
 
 .student{
-  margin-left: -80px;
+  text-align: center;
+  width:50%;
 }
 
-.student p {
-  margin-left:14px;
+
+.student-info {
+  transform:translateX(-155px);
 }
 
 .nav-profile {
@@ -105,6 +108,7 @@ main {
 .flex-item .row2 {
    order:2;
 }
+
 .row2 h3  {
    text-align: center;
    margin-top:60%;
@@ -125,7 +129,7 @@ main {
 .flex-item .row3 {
     order:3;
     margin-bottom: 50px;
-    margin-right:90px;
+    margin-right:80px;
 }
 
 .lessons {
@@ -162,9 +166,7 @@ h3.title {
   margin-top: 60px;
 }
 
-.student {
-  text-align: center;
-}
+
 
 
 /* font and size basic styling*/
@@ -174,6 +176,7 @@ h3.title {
   color:#fff;
   line-height: 10px;
 }
+
 .student p {
   font-size:2em;
   font-weight: 400;
@@ -185,7 +188,7 @@ h3.title {
 	background-size: cover;
 	width:156px;
 	height:156px;
-  margin-left:60px;
+  margin-left:80px;
 }
 
 
@@ -233,10 +236,9 @@ a.view-more {
   text-align: center;
 	background-color:#ee447c;
   padding:12.5px 40px;
-  letter-spacing: 0.6;
+  letter-spacing: 0.6px;
   color:#fff;
   cursor: pointer; 
-  
 }  
 
 
@@ -261,12 +263,10 @@ a.view-more {
 .show {
    display:flex;
    flex-direction:column;
-   position: absolute;
-   top:300px;
-   left:550px;
-   width:80%;
-   justify-content:center;
-   display: none;
+   padding-left:40%;
+   margin-top:-25%;
+   overflow: hidden;
+   display:none;
 }
 
 .play-icon img {
@@ -283,7 +283,7 @@ p.notice {
   font-weight: 300;
   margin-left:110px;
   border-bottom: 1px solid #fff;
-  width:41%;
+  width:60%;
   padding-bottom: 2px;
 }
 

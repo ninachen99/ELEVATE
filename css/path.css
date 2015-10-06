@@ -32,7 +32,7 @@ body {
 
 header {
   margin-top: 20px;
-  padding-left: 5%;
+  padding-left: 8%;
   width: 100%;
   height: 76px;
 }
@@ -78,7 +78,7 @@ section.hero {
     background-size: cover;
     height: 520px;
     width:100%;
-    margin-top: -15px;
+    margin-top: -13px;
     background-color: #4556a5;
     background-blend-mode:soft-light;
 }
@@ -170,7 +170,6 @@ article.descpt::before {
 div.course-intro {
     width: 70%;
     height: 667px;
-    
     padding:40px;
     background-color:#af1f59;
     -webkit-clip-path: polygon(0 0, 80% 0%, 33% 100%, 0% 100%);
@@ -239,79 +238,90 @@ div.course-intro {
 
 .grid-item:hover {
     opacity: 60%;
-    transition: background-color 0.8s ease;
+    transition: background-color 0.5s ease;
     background-color: #af1f59;
 }
 
-/* drop down menu path breakdown styles */ 
-.path-menu {
-    margin-bottom: 5%;
-    
-}
 
-.drop-nav {
-  display: flex;
-  flex-direction: row;
-  margin-left:12%;
-}
+/* path breakdown*/
 
-/* orders of class list*/
-.down-arrow {
-  order:1;
-}
-
-.container-inner {
-  order:2;
-  flex-basis:50%;
-  overflow:hidden;
-}
-
-.start-button {
-  order:3;
-}
-
-.start-button li {
-  margin-bottom: 80px;
-  margin-top:45px;
-}
-
-.zero-rate  {
-   order:4;
-}
-
-.zero-rate li {
-   margin-top:30px;
-   margin-bottom: 40px;
-}
-
-
-/* end of orders of class list, start styling*/
-
-.path-menu h1 {
+.path-detail h1 {
    font-size: 4em;
    font-weight: 400;
    text-align: center;
-   text-transform: uppercase;
+   color: #4656a5;
+   margin-left: -80px;
+}
+
+.path-detail {
+  margin-left: 10%;
+  width:80%;
+  margin-top: -30px;
+  margin-bottom: 120px;
+}
+
+div.row {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #4656a5;
+  width:90%;
+  margin-left: 2%;
+
+}
+
+div.row:hover {
+  background-color: rgba(70, 86, 165, 0.3);
+  color:#fff;
+}
+
+
+/* orders of class list*/
+.icon .fa {
+  order:1;
+  margin-right: 30px;
+  font-size: 3em;
+}
+
+.lesson-container {
+  order:2;
+  flex-basis: 80%;
+}
+
+.progress  {
+  order:4;
+  margin-left: 40px;
+  margin-top: 25px;
+}
+
+.progress img {
+  width:57px;
+  height: 57px;
+}
+
+.start-button  {
+  order:3;
+  margin-top: 50px;
+}
+
+/* end of orders of class list, start styling*/
+
+.lesson-title p {
+   font-size:1.5em;
+   font-weight: 300;
    color: #4656a5;
 }
 
-.path-menu p {
-   font-size:1.5em;
+.lesson-title h3 {
+   font-size:2em;
    font-weight: 400;
    color: #4656a5;
 }
 
-.path-menu h3 {
-    font-size: 2em;
-    font-weight: 600;
-    color: #4656a5; 
-}
-
-.down-arrow i {
+.icon i {
     font-size:3em;
     font-weight: 600;
     color:#4656a5;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     margin-top:25px;
 }
 
@@ -323,63 +333,36 @@ div.course-intro {
     padding:12.5px 37px;
 }
 
-.zero-rate img {
-    width:57px;
-    height: 57px;
-}
-
-.drop-nav * {
-   margin-left:1%;
-   list-style: none;
-}
 
 /* the hidden drop down menu of html*/
-.sub-nav a {
-   text-decoration: none;
-   border-bottom: 1px solid #fff;
-   font-size:2em;
-   color: #4656a5;
-}
 
- .container-inner h3 {
-   border-bottom: 1px solid #4656a5;
-}
-
-
-.drop-nav .sub-nav {
+ .drop-down {
     list-style: none;
-     display: none;
-    
+    display: none;
+    margin-bottom:10px;
  }
-
-.sub-nav li  {
-     padding:10px;
-     border-bottom: 1px solid #4656a5;
-}
-
- .drop-nav li:hover ul.sub-nav {
-     display: block;
-
- }  
-
-/* end of the hidden drop down menu of html*/
  
- div.row2 {
-    cursor: pointer;
+ .drop-down li {
+   font-size: 2em;
+   color:#4656a5;
+   border-bottom: 1px solid #4656a5;
+   margin-bottom: 40px;
+   padding-bottom: 15px;
+   list-style: none;
+   cursor:pointer;
  }
-
-
- div.drop-title:hover {
-    background-color:#4656a5; 
-}
-
-.drop-title h3:hover {
+ 
+.lesson-container:hover .drop-down {
+    display: block; 
     color:#fff;
 }
-.drop-title p {
-    color:#fff;
+
+.drop-down i {
+    float:right;
+    font-size:2em;
+    color:#4656a5;
+    clear:both;
 }
-  
 
 /* footer ---------- */
 
@@ -390,7 +373,6 @@ footer {
   height: 356px;
   z-index: -9;
   clear: both;
-
 }
 
 .contact-us ul li {
@@ -443,8 +425,8 @@ ul.connect {
 
 .bottom {
   clear: both;
-  
 }
+
 .bottom p {
   margin-top:3%;
   position: relative; 
