@@ -226,7 +226,57 @@ ul.pro-button {
       width:185px;
       background-color:#ee447c;
       text-align: center;
+      letter-spacing: 0.5px;
 }
+
+/* dialog box style when click submit */ 
+
+#pop-window {
+  position: absolute;
+  left:5%;
+  top:45%;
+  width:851px;
+  height: 465px;
+  z-index: 10; 
+  box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
+  background-color: #f1f2f2;
+  border:none;
+}
+
+#pop-window h3 {
+  background-color: #4655a5;
+  height: 70px;
+  width:100%;
+  color:#fff;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  margin:0 auto;
+  font-weight: 400;
+  padding-top:17.5px;
+}
+
+#pop-window p {
+  font-size:2em;
+  color:#404041;
+  text-align: center;
+}
+
+#exit  {
+  padding: 25px 78px;
+  background-color:#ee447c;
+  text-align: center;
+  font-size:2em;
+  text-decoration: none;
+  color:#fff;
+  letter-spacing: 0.9px;
+}
+
+div.exit-box {
+  margin-top: 100px;
+  margin-left: 290px;
+}
+/* end of dialog box*/
 
 .question i {
     color:#ee447c;

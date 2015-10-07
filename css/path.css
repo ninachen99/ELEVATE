@@ -238,7 +238,7 @@ div.course-intro {
 
 .grid-item:hover {
     opacity: 60%;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.3s ease;
     background-color: #af1f59;
 }
 
@@ -270,10 +270,25 @@ div.row {
 }
 
 div.row:hover {
-  background-color: rgba(70, 86, 165, 0.3);
+  background-color: #4656a5;
   color:#fff;
 }
 
+div.row:hover h3 {
+  color:#fff;
+}
+div.row:hover p {
+  color:#fff;
+}
+div.row:hover i {
+  color:#fff;
+}
+div.row:hover .hidden-menu {
+  color:#fff;
+}
+div.row:hover li {
+  color:#fff;
+}
 
 /* orders of class list*/
 .icon .fa {
@@ -345,7 +360,7 @@ div.row:hover {
  .drop-down li {
    font-size: 2em;
    color:#4656a5;
-   border-bottom: 1px solid #4656a5;
+   border-bottom: 1px solid #fff;
    margin-bottom: 40px;
    padding-bottom: 15px;
    list-style: none;

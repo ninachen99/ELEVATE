@@ -208,8 +208,8 @@ iframe {
 	color:#fff;
 }
 
-.v-button i:hover {
-	color:#fff;
+.v-button li:hover .fa {
+   color:#fff;
 }
 
 .v-button i {

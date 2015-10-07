@@ -5,5 +5,13 @@ $(function() {
         return false;
     });  
 
+    var dialog = document.getElementById('pop-window');  
+    document.getElementById('submit').onclick = function() {  
+        dialog.show();  
+    };  
+    document.getElementById('exit').onclick = function() {  
+        dialog.close();  
+    };  
+
 });
 
