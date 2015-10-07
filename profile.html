@@ -11,7 +11,7 @@
 <body>
 	<header> 
 		 <div class="logo">
-		  <a href="index.html"> <img class="logo" src="photos/logo.png", alt="logo"/></a>
+		  <a href="index.html"> <img class="logo" src="Photos/logo.png", alt="logo"/></a>
 		 </div>
 		   <nav class="nav-bar" >
 		      <ul>
@@ -23,62 +23,69 @@
 <!--hero, with grid layout with col and row-->
    <main>
    <section class="container">
-		  <div class="student row1">
+		  <div class="student">
 		        <div class="student-img"></div>
-		        <div class="student-info">
-			        <h3 class="name">Isaiah Reynolds</h3>
-			        <p>Front End Developer</p> 
-		        </div>
+		        <h3 class="name">Isaiah Reynolds</h3>
+		        <p>Front End Developer</p> 
 		        <ul class="course-activity">
-		          <li id="clickEnroll"><a href="#">Enrolled</a></li>
-		          <li><a href="#">Projects</a></li>
-		          <li id="clickPlay"><a href="#">Playground</a></li>
+			          <li id="clickEnroll"><a href="#">Enrolled</a></li>
+			          <li><a href="#">Projects</a></li>
+			          <li id="clickPlay"><a href="#">Playground</a></li>
 		        </ul>
 		  </div>   
 <!--float items, the nav bar-->
         
 <!--float items, path and lesson-->
-         
+         <div class="container2">
              <div class="flex-item enrolled row2 helper">
-                  <h3>Paths</h3>
+               <div>
+                  <h3 class="title">Paths</h3>
 		          <div class="image1"></div>
 		          <p>Become a <br>Front-End Developer</p>
 		          <a class="view-more" href="path.html">Resume Path</a>
+		      </div>
 		     </div>
 
              <div class="flex-item row3">
 		           <div class="nav-profile row3">
-	                  <a href="#"><i class="fa fa-bars"></i></a>
-	                  <a href="#">A-Z</a>
+		              <div class="pro-icon">
+		                  <div><a href="#"><i class="fa fa-th-list"></i></a></div>
+		                  <div><a href="#">A-Z</a></div>
+	                  </div>
 		           </div>
 
 		           <div class="lessons enrolled helper">
-			          <h3 class="title">Lesson</h3>
-			          <div class="image2"></div>
-			          <p>LESS/SASS</p>
-			          <a class="view-more" href="#">View Lesson</a>
+		             
+				          <div><h3 class="title lesson">Lesson</h3>
+				          <div class="image2"></div>
+				          <p class="less">LESS/SASS</p>
+				          <a class="view-more" href="#">View Lesson</a></div>
+			         
 		          </div>
             </div>
-         
+         </div>
 	 </section>  
 <!--click event show playground content -->
     <section class="play-ground show helper">
-	    <p class="notice">You haven't start any non-course related projects yet.</p>
-	    
-	    <div class="play-icon">
-	           <img src="Photos/icons/play1-08.png">
-	           <img src="Photos/icons/play2-08.png">
-	           <img src="Photos/icons/play3-08.png">
-	    </div>
-	    <div class="actions">
-	       <ul>
-		     <li class="first">Create New Project</li>
-		     <li class="middle">Saved Projects</li>
-		     <li class="last">Share Project</li>
-		   </ul>
-	    </div>
+	      <div class="hidden-title">
+			    <p class="notice">You haven't start any non-course related projects.</p>
+			    
+			    <div class="play-icon">
+				      <ul>
+				           <li><img src="Photos/icons/play1-08.png"></li>
+				           <li><img src="Photos/icons/play2-08.png"></li>
+				           <li><img src="Photos/icons/play3-08.png"></li>
+				      </ul>
+			          <ul class="next-step">
+					     <li><p id="first-step">Create New Project</p></li>
+					     <li><p id="middle">Saved Projects</p></li>
+					     <li><p id="last-step">Share  Project</p></li>
+					  </ul>
+			    </div>
+		   </div>
     </section>
 </main>
+
 <!-- footer-->
 	<footer>
 		  <section class="contact-us">

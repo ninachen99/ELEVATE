@@ -1,3 +1,4 @@
+
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700);
 
 
@@ -22,7 +23,6 @@ body {
    margin: 0 auto;
    font-size: 12px;
    width: 100%;
-   overflow: 
 }
 
 
@@ -83,68 +83,133 @@ main {
 }
 
 /* floating content-the nav bar for profile*/
- section.container {
-    display: flex;
-    flex-direction:row;
-    justify-content:space-around;
-    padding-top: 100px;
-    width:90%;
- }
-
-.student{
+ 
+.student {
+  width:20%;
+  float:left;
+  padding-top:60px;
   text-align: center;
-  width:50%;
+  margin-left:5%;
+}
+
+.student-img {
+  margin-left: 60px;
+}
+
+.flex-item {
+  float: left;
+  position: relative;
+}
+
+.container2 .row2  {
+  position:absolute;
+  display: block;
+  top:0;
+  left:0;
+  transform:translate(400%, 85%);
+  text-align: center;
+  
+}
+
+.nav-profile div {
+   float:left;
+   display: inline-block;
+   margin-right: 10px;
+   position: relative;
+   transform:translate(200%, 95%);
+}
+
+.lessons  {
+  position:absolute;
+  display: block;
+  top:0;
+  left:0;
+  transform:translate(420%, 62%);
+  text-align: center;
+}
+
+h3.lesson {
+  padding-bottom: 2px;
+}
+
+p.less{
+  margin-bottom: 33px;
+}
+
+.play-ground .show {
+  text-align: center;
+
+}
+
+.play-icon {
+  float:left;
+
+}
+
+.play-icon ul li {
+  display: inline-block;
+  transform:translateX(-50px);
+}
+
+.play-ground .show {
+  position:relative;
+}
+
+.next-step li {
+  margin-right: 20px;
+  text-align: center;
+}
+
+.hidden-title {
+  position:absolute;
+  top:0;
+  left:0;
+  transform:translate(90%,70%);
+}
+
+p.notice {
+  transform:translateX(50px);
+  border-bottom: 1px solid #fff;
+  width:80%;
 }
 
 
-.student-info {
-  transform:translateX(-155px);
+.next-step p {
+  font-weight: 600;
+  letter-spacing: 0.9px;
 }
 
-.nav-profile {
-    order:3;
+
+.next-step {
+  transform:translateX(-8px);
 }
 
-.flex-item .row2 {
-   order:2;
+.next-step li {
+   margin-right: 25px;
 }
+ li p#last-step {
+   margin-right:0;
+   margin-left: 40px;
+}
+
+li p#first-step {
+   margin-left:-9px;
+}
+
+li p#middle {
+   margin-left: 6px;
+}
+
+/*styling*/
 
 .row2 h3  {
-   text-align: center;
-   margin-top:60%;
    font-size: 1.5em;
    font-weight: 400;
-   border-bottom: 1px solid #fff;
    letter-spacing: 0.8px;
-   padding-bottom: 1px;
    text-transform: uppercase;
 }
 
-
-.row2 p {
-   text-align: center;
-   margin-bottom: 40px;
-}
-
-.flex-item .row3 {
-    order:3;
-    margin-bottom: 50px;
-    margin-right:80px;
-}
-
-.lessons {
-  width:70%;
-  text-align: center;
-}
-
-.lessons p {
-  margin-bottom: 60px;
-}
-
-
 h3.title {
-  border-bottom: 1px solid #fff;
-  padding-bottom: 2px;
   letter-spacing: 0.8px;
 }
 
@@ -157,16 +222,11 @@ h3.title {
   text-align: center;
   width:84px;
   height:50px;
-  margin-right:20px;
-  padding-top:3px;
 }
 
 .flex-item {
   color:#fff; 
-  margin-top: 60px;
 }
-
-
 
 
 /* font and size basic styling*/
@@ -176,7 +236,6 @@ h3.title {
   color:#fff;
   line-height: 10px;
 }
-
 .student p {
   font-size:2em;
   font-weight: 400;
@@ -184,34 +243,38 @@ h3.title {
 }
 
 .student-img {
-	background-image: url("../Photos/head-08.png");
-	background-size: cover;
-	width:156px;
-	height:156px;
-  margin-left:80px;
+  background-image: url("../Photos/head-08.png");
+  background-size: cover;
+  width:156px;
+  height:156px;
 }
 
 
 .course-activity li  {
-	list-style: none;
-	font-size: 2em;
-	text-align: center;
-	border:0.99px solid #fff;
-	width:244px;
-	height:64px;
-	padding-top:16px;
-	margin-bottom: 20px;
-	cursor:pointer;
+  list-style: none;
+  font-size: 2em;
+  text-align: center;
+  border:0.99px solid #fff;
+  width:244px;
+  height:64px;
+  cursor:pointer;
+  margin-bottom: 10px;
+  margin-left: -6px;
 }
 
 .course-activity a {
-	text-decoration: none;
-	color:#fff;
-	font-weight: 600;
-	text-transform: uppercase;
+  text-decoration: none;
+  color:#fff;
+  font-weight: 600;
+  text-transform: uppercase;
 }
+
+.course-activity li {
+  padding-top: 10px;
+}
+
 .course-activity  li:hover {
-	background-color: #ee447c;
+  background-color: #ee447c;
   border:0px;
 }
 
@@ -219,9 +282,10 @@ h3.title {
 /* float item styleing font and size*/
 
 .flex-item .title {
-	font-size:1.5em;
-	font-weight: 400;
+  font-size:2em;
+  font-weight: 400;
   text-transform: uppercase;
+  border-bottom: 1px solid #fff;
 }
 
 .flex-item p {
@@ -231,12 +295,12 @@ h3.title {
 
 
 a.view-more {
-	text-decoration: none;
-	font-size: 1.2em;
+  text-decoration: none;
+  font-size: 1.2em;
   text-align: center;
-	background-color:#ee447c;
+  background-color:#ee447c;
   padding:12.5px 40px;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.6;
   color:#fff;
   cursor: pointer; 
 }  
@@ -253,74 +317,40 @@ a.view-more {
   content:url("../Photos/icons/fini.png");
   width:160px;
   height:160px;
-  margin-left:30px;
-  margin-bottom: 10px;
 }
 
 
 /* playground - click event */
 
-.show {
-   display:flex;
-   flex-direction:column;
-   padding-left:40%;
-   margin-top:-25%;
-   overflow: hidden;
-   display:none;
+.play-ground {
+   display: none;
 }
 
 .play-icon img {
-   width:200px;
-   height: 181px;
-   display:inline-block;
-   margin-left: 20px;
+   width:220px;
+   height: 201px;
 }
 
+
 p.notice {
-  order:1;
   font-size: 1.75em;
   color:#fff;
   font-weight: 300;
-  margin-left:110px;
-  border-bottom: 1px solid #fff;
-  width:60%;
-  padding-bottom: 2px;
+  text-align: center;
 }
 
 
-.play-icon {
-  order:2;
-}
-
-.actions {
-  order:3;
-  
-}
-.actions ul li {
-  display:inline-block;
+.play-icon p {
   font-size: 2em;
   color:#fff;
   font-weight: 600;
-  list-style: none;
-  margin-right:45px;
 }
 
-li.last {
-  margin-right: 0;
-  margin-left: 25px;
+p.last {
+  margin-left:6px;
 }
 
-li.first{
-  margin-left: -40px;
-}
-
-li.middle {
-  margin-left: 4px;
-}
-
-
-/* footer ----*/
-
+/* footer*/
 footer {
   background-color:#231f20;
   margin-top: -20px;
@@ -328,7 +358,6 @@ footer {
   height: 356px;
   z-index: -9;
   clear: both;
-
 }
 
 .contact-us ul li {
@@ -392,7 +421,6 @@ ul.connect {
 .copy-right {
   color: #fff;
 }
-
 
 
 
