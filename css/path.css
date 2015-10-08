@@ -260,7 +260,7 @@ div.course-intro {
   margin-bottom: 120px;
 }
 
-div.row  {
+div.row .block  {
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #4656a5;
@@ -269,23 +269,23 @@ div.row  {
 
 }
 
-div.row:hover {
+div.block:hover {
   background-color: #4656a5;
   color:#fff;
 }
 
-div.row:hover h3 {
+div.block:hover h3 {
   color:#fff;
 }
-div.row:hover p {
+div.block:hover p {
   color:#fff;
 }
-div.row:hover i {
+div.block:hover i {
   color:#fff;
 }
-div.row:hover .hidden-menu {
+.row:hover #drop-down  {
   color:#fff;
-  transition: all 0.9s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 div.row:hover li {
@@ -356,34 +356,37 @@ div.row:hover li {
 
 /* the hidden drop down menu of html*/
 
-.drop-down {
-  list-style: none;
+#drop-down {
   display: none;
   margin-bottom:10px;
+  margin:0 20px;
 }
 
-.drop-down li {
- font-size: 2em;
+#drop-down li {
+ font-size: 1.7em;
+ font-weight: 600;
  color:#4656a5;
- border-bottom: 1px solid #fff;
+ border-bottom: 1px solid #4656a5;
  margin-bottom: 40px;
  padding-bottom: 18px;
- list-style: none;
  cursor:pointer;
+ list-style: none;
+ width:89%;
 }
 
 
 
-.lesson-container:hover .drop-down {
+.row:hover #drop-down {
   display: block; 
-  color:
+  color:#fff;
 }
 
-.drop-down i {
+#drop-down i {
   float:right;
   font-size:2em;
   color:#4656a5;
   clear:both;
+  display:inline-block;
 }
 
 /* footer ---------- */
@@ -433,11 +436,11 @@ footer {
   -webkit-border-radius: 12.5px;
   border-radius: 12.5px;
   margin-right:10px;
-  padding-top:5px;
+  padding-top:6px;
 }
 
 ul.connect {
- margin-left:-45px;
+ margin-left:-48px;
  margin-top:-40px;
  width:200px;
 }
