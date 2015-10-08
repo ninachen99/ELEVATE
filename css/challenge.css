@@ -129,6 +129,14 @@ i.fa-home {
      margin-bottom: 3%;
 }
 
+svg {
+   position: absolute;
+    height: 520px;
+    top: 59px;
+    overflow: hidden;
+    left: 40%;
+}
+
 .grid-item {
     width: 12.5%;
     height: 123.23px;
@@ -147,7 +155,6 @@ i.fa-home {
 .grid-item:hover {
   background-color: #4655a5;
   color:#fff;
-  transition: 0.1s;
 }
 
 .category-grid {
@@ -187,7 +194,7 @@ div.test-title {
 iframe {
 	width: 100%;
 	height:739.92px;
-	margin-left:10%;
+  margin-left:10%;
 }
 
 /* buttons for code challenge*/
@@ -212,7 +219,7 @@ iframe {
 	height:50px;
 	padding-top: 12.5px;
   margin-top: -14px;
-  
+  overflow: hidden;
 }
 
 #button3 {

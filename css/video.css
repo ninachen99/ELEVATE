@@ -74,13 +74,13 @@ div.logo img{
     background-size: cover;
     height: 520px;
     width:100%;
-    margin-top: -13px;
+    margin-top: -11px;
     background-color: #4556a5;
     background-blend-mode:soft-light;
 }
 
 .nav-path {
-    margin-top: -10px;
+    margin-top: -9px;
     margin-left:2%;
     display: inline-block;
 }
@@ -130,19 +130,28 @@ i.fa-home {
      margin-bottom: 3%;
 }
 
+svg {
+   position: absolute;
+    height: 520px;
+    top: 60px;
+    overflow: hidden;
+    left: 40%;
+}
+
+
 /* floating list of number path*/
 
 .grid-item a {
     text-decoration: none;
     color: #4655a5;
 }
-.grid-item a:hover {
+.grid-item:hover .link {
     color:#fff;
 }
 
 .grid-item {
     width: 12.5%;
-    height: 123.23px;
+    height: 126px;
     float: left;
     background: #fff;
     border: 1px solid #4655a5;
@@ -158,7 +167,6 @@ i.fa-home {
 .grid-item:hover {
   background-color: #4655a5;
   color:#fff;
-  transition: 0.1s;
 }
 
 .category-grid {
@@ -182,6 +190,7 @@ iframe {
 	position:relative;
 	margin-top:-15px;
 	margin-left:-40px;
+  margin-bottom: 120px;
 }
 
 .video-buttons i {
@@ -287,7 +296,6 @@ footer {
   position: relative;
   height: 356px;
   clear: both;
-
 }
 
 .contact-us ul li {
@@ -326,11 +334,11 @@ footer {
   -webkit-border-radius: 12.5px;
   border-radius: 12.5px;
   margin-right:10px;
-  padding-top:5px;
+  padding-top:6px;
 }
 
 ul.connect {
-   margin-left:-45px;
+   margin-left:-48px;
    margin-top:-40px;
    width:200px;
 }

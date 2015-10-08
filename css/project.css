@@ -29,7 +29,7 @@ body {
 /* header ---- */
 
 header {
-  margin-top: 20px;
+  padding-top: 3px;
   padding-left: 8%;
   width: 100%;
   height: 76px;
@@ -47,7 +47,7 @@ div.logo img{
 }
 
 .nav-bar  {
-  margin-top: -2.5%;
+  margin-top: -25px;
   margin-left: 60%;
   
 }
@@ -70,14 +70,16 @@ div.logo img{
 }
 
 /* hero ---*/ 
-
+main {
+  overflow: hidden;
+}
 
 .hero {
     background-image: url("../Photos/MountainHero.jpg");
     background-size: cover;
     height: 520px;
     width:100%;
-    margin-top: -13px;
+    margin-top: -20px;
     background-color: #4556a5;
     background-blend-mode:soft-light;
 }
@@ -137,6 +139,14 @@ i.fa-home {
 	width:100%;
 	top:20%;
 }
+
+  svg {
+  position: absolute;
+  height: 520px;
+  top: 50px;
+  overflow: hidden;
+  left: 40%;
+}
 /* floating list of number path*/
 .grid-item {
     width: 12.5%;
@@ -156,7 +166,6 @@ i.fa-home {
 .grid-item:hover {
   background-color: #4655a5;
   color:#fff;
-  transition: 0.2s;
 }
 
 .category-grid {
@@ -354,7 +363,7 @@ textarea {
 .note-bar .bar2 {
   float:right;
   transform:translate(-650%);
-  margin-top:-80px;
+  margin-top:-130px;
 }
 
 li.button-note {
@@ -368,6 +377,7 @@ li.button-note {
   padding-top:15px;
   cursor:pointer;
   margin-left: 60px;
+  margin-bottom: 50px;
 }
 
 .button-note i {
@@ -449,11 +459,11 @@ footer {
   -webkit-border-radius: 12.5px;
   border-radius: 12.5px;
   margin-right:10px;
-  padding-top:5px;
+  padding-top:6px;
 }
 
 ul.connect {
-   margin-left:-45px;
+   margin-left:-49px;
    margin-top:-40px;
    width:200px;
 }
