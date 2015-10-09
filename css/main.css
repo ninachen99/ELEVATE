@@ -48,8 +48,8 @@ div.logo img{
 .nav-bar  {
 	margin-top: -2.5%;
 	margin-left: 60%;
-	
 }
+
 .nav-bar ul li {
 	list-style: none;
 	float: left; 
@@ -77,7 +77,6 @@ section.hero {
 	margin-top: -8px;
 	position: relative;
 	width:100%;
-
 }
 
 section.hero:before {
@@ -112,7 +111,6 @@ h5.page-sub {
 div.container {
 	display: flex;
 	flex-direction: row wrap;
-	
 	align-content: flex-end;
 	width:100%;
     margin-top:-60px;
@@ -123,7 +121,6 @@ div.container {
  div.flex-item {
 	flex: 1;
 	text-align: center;
-
 }
 
 div.keypoint {
@@ -148,6 +145,7 @@ div.keypoint {
 	font-size: 1.28em;
 	color:#fff;
 }
+
 .site-intro h3 {
 	font-weight: 400;
 	font-size: 1.71em;
@@ -343,7 +341,6 @@ article.story {
 	top:300px;
 	left: 650px;
 	transform:translate(50% 50%);
-	
 }
 
 div.interview {
@@ -396,9 +393,7 @@ footer {
   margin-top: -14px;
   position: relative;
   height: 356px;
-  z-index: -9;
   clear: both;
-
 }
 
 .contact-us ul li {
@@ -437,7 +432,8 @@ footer {
   -webkit-border-radius: 12.5px;
   border-radius: 12.5px;
   margin-right:10px;
-  padding-top:5px;
+  padding:6px 0px;
+  color:#4655a5;
 }
 
 ul.connect {
